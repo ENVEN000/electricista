@@ -1,37 +1,43 @@
 # Electricista residencial e industrial en Caracas
 
-Sitio estático (HTML + CSS + JS) listo para **GitHub Pages**. Sin dependencias ni proceso de build.
-Dominio: **electricista.enven.org**
+Sitio estático multipágina (HTML + CSS + JS) para **GitHub Pages**, con dominio **electricista.enven.org**.
+
+## Estructura
 
 ```
-index.html
-css/styles.css
-js/main.js
-img/  logo.svg · favicon.svg · hero-tablero.svg · sala-electrica.svg · og-image.png
-CNAME · robots.txt · sitemap.xml
+index.html                     Portada
+servicios/                     Índice + 8 páginas de servicio
+zonas/                         Índice + 5 páginas de zona (Gran Caracas)
+guias/                         Índice + 4 guías
+contacto/                      Formulario, WhatsApp, perfil de Google
+404.html · sitemap.xml · robots.txt · CNAME
+css/ js/ img/
 ```
 
-## Publicar en GitHub Pages
+Las páginas se generaron con un script; si quiere editar texto, modifique el HTML directamente.
 
-1. Crea un repositorio nuevo en GitHub y sube estos archivos a la raíz.
-2. Ve a **Settings → Pages** → *Deploy from a branch*, rama `main`, carpeta `/ (root)`.
-3. En *Custom domain* escribe `electricista.enven.org` (el archivo `CNAME` ya lo incluye) y activa *Enforce HTTPS*.
-4. En el DNS de `enven.org` crea un registro **CNAME**: `electricista` → `TU-USUARIO.github.io`.
+## Publicar
 
-## Personalización rápida
+1. Suba todos los archivos a la raíz del repositorio de este sitio (reemplaza la versión anterior).
+2. Settings → Pages: rama `main`, carpeta `/ (root)`, dominio personalizado `electricista.enven.org`, *Enforce HTTPS* activo.
+3. Los enlaces internos usan rutas desde la raíz (`/servicios/...`), pensadas para el dominio propio.
 
-| Qué cambiar | Dónde |
+## Después de publicar (indexación)
+
+1. En Search Console, envíe `https://electricista.enven.org/sitemap.xml` otra vez.
+2. Use *Inspección de URL* y **Solicitar indexación** para la portada y las páginas principales.
+3. Enlace el sitio desde otras páginas y redes, y complete su perfil de Google.
+
+## Personalización
+
+| Qué | Dónde |
 |---|---|
-| Número de WhatsApp | Buscar `wa.me/584241785958` en `index.html` (formato internacional sin `+`) |
-| Correo, teléfono | Footer y JSON-LD de `index.html`, y `FALLBACK_EMAIL` en `js/main.js` |
-| Zonas de cobertura (Gran Caracas) | Bloque `areaServed` del JSON-LD en `<head>` y el footer de `index.html` |
-| Colores | Variables `:root` al inicio de `css/styles.css` |
-| Imágenes | Reemplaza los SVG de `img/` por fotos reales y actualiza el `src` |
-| Testimonios | Sección `#confianza`: hay un comentario HTML indicando cómo reemplazar los compromisos por testimonios reales |
+| WhatsApp / teléfono / correo | Buscar `584241785958` y `mc@enven.org` en los HTML y en `js/main.js` |
+| Perfil de Google | Enlace `share.google/...` en cabecera, footer, contacto y datos estructurados |
+| Zonas de cobertura | Páginas en `zonas/` y bloque `areaServed` del JSON-LD |
+| Colores | Variables `:root` en `css/styles.css` |
+| Testimonios | Comentario HTML en la portada, sección `#entrega` |
 
-## Formulario de cotización
+## Formulario
 
-GitHub Pages no procesa formularios. En `js/main.js`:
-
-- **Formspree:** `FORM_ENDPOINT` ya tiene un endpoint configurado. El formulario envía el campo `_subject` ("Solicitud de cotización - Electricista Caracas") para distinguir estos mensajes.
-- **Sin endpoint:** déjalo vacío y el formulario abrirá el correo del usuario con el mensaje prellenado (`mailto:`).
+`FORM_ENDPOINT` en `js/main.js` usa Formspree; envía el asunto «Solicitud de cotización - Electricista Caracas». Sin endpoint, abre el correo del usuario (mailto).

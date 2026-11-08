@@ -10,22 +10,18 @@
     toggle.setAttribute("aria-expanded", String(open));
     toggle.setAttribute("aria-label", open ? "Cerrar menú principal" : "Abrir menú principal");
   }
-  toggle.addEventListener("click", function () {
-    setMenu(!nav.classList.contains("open"));
-  });
-  nav.addEventListener("click", function (e) {
-    if (e.target.closest("a")) setMenu(false);
-  });
-  document.addEventListener("keydown", function (e) {
-    if (e.key === "Escape") setMenu(false);
-  });
+  if (toggle && nav) {
+    toggle.addEventListener("click", function () { setMenu(!nav.classList.contains("open")); });
+    nav.addEventListener("click", function (e) { if (e.target.closest("a")) setMenu(false); });
+    document.addEventListener("keydown", function (e) { if (e.key === "Escape") setMenu(false); });
+  }
 
   // ---- Año del footer ----
   var year = document.getElementById("year");
   if (year) year.textContent = new Date().getFullYear();
 
   // ---- Animación de aparición al hacer scroll ----
-  var targets = document.querySelectorAll(".card, .feature, .mini-card, .duo-card, .steps li, .faq details, .section-head, .stats-strip, .quote, .brand-tile");
+  var targets = document.querySelectorAll(".svc, .signal, .zone-tile, .guide-card, .duo-card, .timeline li, .deliver li, .faq details, .hub-card, .aside-card, .section-head");
   targets.forEach(function (el) { el.classList.add("reveal"); });
 
   if ("IntersectionObserver" in window) {
@@ -36,23 +32,24 @@
           io.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.12 });
+    }, { threshold: 0.1 });
     targets.forEach(function (el) { io.observe(el); });
   } else {
     targets.forEach(function (el) { el.classList.add("in"); });
   }
 
-  // ---- Formulario de cotización ----
+  // ---- Formulario de cotización (solo en /contacto/) ----
   /*
-    CONFIGURACIÓN: GitHub Pages es hosting estático y no puede procesar formularios.
-    Opción A (recomendada): crea un formulario gratis en https://formspree.io y pega aquí su URL.
-    Opción B: déjalo vacío y el formulario abrirá el correo del usuario con el mensaje prellenado (mailto).
+    GitHub Pages es hosting estático y no procesa formularios.
+    Opción A: Formspree (https://formspree.io) — pegue aquí su URL.
+    Opción B: deje FORM_ENDPOINT vacío y se abrirá el correo del usuario (mailto).
   */
-  var FORM_ENDPOINT = "https://formspree.io/f/xoeepaqd";            // ej: "https://formspree.io/f/xxxxxxx"
+  var FORM_ENDPOINT = "https://formspree.io/f/xoeepaqd";
   var FALLBACK_EMAIL = "mc@enven.org";
 
   var form = document.getElementById("quote-form");
   var note = document.getElementById("form-note");
+  if (!form || !note) return;
 
   function show(msg, cls) {
     note.textContent = msg;
@@ -93,7 +90,8 @@
         "Nombre: " + nombre +
         "\nCorreo: " + email +
         "\nTeléfono: " + (data.get("telefono") || "") +
-        "\nProyecto: " + (data.get("proyecto") || "") +
+        "\nZona: " + (data.get("zona") || "") +
+        "\nTrabajo: " + (data.get("proyecto") || "") +
         "\n\n" + (data.get("mensaje") || "");
       window.location.href = "mailto:" + FALLBACK_EMAIL +
         "?subject=" + encodeURIComponent("Solicitud de cotización - " + data.get("proyecto")) +

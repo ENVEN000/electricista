@@ -59,7 +59,7 @@
     <g>
       <circle class="led-g" cx="68" cy="248" r="2.5"/><circle class="led-o d2" cx="68" cy="306" r="2.5"/><circle class="led-g d3" cx="68" cy="364" r="2.5"/>
     </g>
-    <text x="115" y="425" fill="#c9a99b" font-family="monospace" font-size="10" text-anchor="middle">CCM · 440 V</text>
+    <text x="115" y="425" fill="#c9a99b" font-family="monospace" font-size="10" text-anchor="middle">CCM · 480 V</text>
     <path d="M85 440h60" stroke="#ffb02e" stroke-width="3" stroke-linecap="round" opacity=".7"/>
   </g>
 
@@ -68,7 +68,7 @@
     <rect x="205" y="40" width="170" height="440" rx="12" fill="url(#rk)" stroke="#ff7a1a" stroke-width="2.5"/>
     <rect x="218" y="56" width="144" height="60" rx="6" fill="url(#pn)" stroke="#a65535"/>
     <text x="232" y="78" fill="#c9a99b" font-family="monospace" font-size="10">TABLERO GENERAL</text>
-    <text x="232" y="102" fill="#ffb02e" font-family="monospace" font-size="20" font-weight="700">220 V</text>
+    <text x="232" y="102" fill="#ffb02e" font-family="monospace" font-size="20" font-weight="700">240 V</text>
     <circle class="led-g" cx="344" cy="72" r="4"/>
     <path d="M318 98l8-10 7 6 12-14" fill="none" stroke="#ff7a1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 
