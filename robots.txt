@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://electricista.enven.org/sitemap.xml
+Sitemap: https://io.enven.org/sitemap.xml

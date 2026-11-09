@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 520" width="560" height="520" role="img" aria-label="Racks de servidores">
+  <defs>
+    <linearGradient id="rk" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1b2c4d"/>
+      <stop offset="1" stop-color="#0f1a2e"/>
+    </linearGradient>
+    <linearGradient id="sv" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22345a"/>
+      <stop offset="1" stop-color="#1a2a4b"/>
+    </linearGradient>
+    <radialGradient id="glow" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#1fb6ff" stop-opacity=".35"/>
+      <stop offset="1" stop-color="#1fb6ff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="cable" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#1fb6ff"/>
+      <stop offset="1" stop-color="#22d3a6"/>
+    </linearGradient>
+    <style>
+      .led-g{fill:#22d3a6;animation:b 2s infinite}
+      .led-b{fill:#1fb6ff;animation:b 1.4s infinite}
+      .led-o{fill:#ffb547;animation:b 2.6s infinite}
+      .d2{animation-delay:.4s}.d3{animation-delay:.9s}.d4{animation-delay:1.3s}
+      @keyframes b{0%,100%{opacity:1}50%{opacity:.25}}
+    </style>
+  </defs>
+
+  <ellipse cx="280" cy="260" rx="260" ry="240" fill="url(#glow)"/>
+  <ellipse cx="280" cy="490" rx="230" ry="16" fill="#000" opacity=".35"/>
+
+  <!-- Rack izquierdo -->
+  <g>
+    <rect x="40" y="90" width="150" height="390" rx="10" fill="url(#rk)" stroke="#2c4272" stroke-width="2"/>
+    <g fill="url(#sv)" stroke="#33508a" stroke-width="1">
+      <rect x="52" y="104" width="126" height="30" rx="4"/>
+      <rect x="52" y="142" width="126" height="30" rx="4"/>
+      <rect x="52" y="180" width="126" height="30" rx="4"/>
+      <rect x="52" y="218" width="126" height="30" rx="4"/>
+      <rect x="52" y="256" width="126" height="30" rx="4"/>
+      <rect x="52" y="294" width="126" height="30" rx="4"/>
+      <rect x="52" y="332" width="126" height="30" rx="4"/>
+      <rect x="52" y="370" width="126" height="30" rx="4"/>
+      <rect x="52" y="408" width="126" height="56" rx="4"/>
+    </g>
+    <g stroke="#0b1220" stroke-width="3" stroke-linecap="round" opacity=".7">
+      <path d="M92 119h50M92 157h50M92 195h50M92 233h50M92 271h50M92 309h50M92 347h50M92 385h50"/>
+    </g>
+    <g>
+      <circle class="led-g" cx="66" cy="119" r="3"/><circle class="led-b d2" cx="76" cy="119" r="3"/>
+      <circle class="led-g d3" cx="66" cy="157" r="3"/><circle class="led-g" cx="76" cy="157" r="3"/>
+      <circle class="led-b" cx="66" cy="195" r="3"/><circle class="led-o d2" cx="76" cy="195" r="3"/>
+      <circle class="led-g d2" cx="66" cy="233" r="3"/><circle class="led-g d4" cx="76" cy="233" r="3"/>
+      <circle class="led-b d3" cx="66" cy="271" r="3"/><circle class="led-g" cx="76" cy="271" r="3"/>
+      <circle class="led-g" cx="66" cy="309" r="3"/><circle class="led-b d2" cx="76" cy="309" r="3"/>
+      <circle class="led-o d4" cx="66" cy="347" r="3"/><circle class="led-g" cx="76" cy="347" r="3"/>
+      <circle class="led-g d2" cx="66" cy="385" r="3"/><circle class="led-b" cx="76" cy="385" r="3"/>
+    </g>
+  </g>
+
+  <!-- Rack central (principal) -->
+  <g>
+    <rect x="205" y="40" width="170" height="440" rx="12" fill="url(#rk)" stroke="#1fb6ff" stroke-width="2.5"/>
+    <g fill="url(#sv)" stroke="#3b6fc0" stroke-width="1">
+      <rect x="218" y="56" width="144" height="34" rx="4"/>
+      <rect x="218" y="98" width="144" height="34" rx="4"/>
+      <rect x="218" y="140" width="144" height="34" rx="4"/>
+      <rect x="218" y="182" width="144" height="34" rx="4"/>
+      <rect x="218" y="224" width="144" height="34" rx="4"/>
+      <rect x="218" y="266" width="144" height="34" rx="4"/>
+      <rect x="218" y="308" width="144" height="34" rx="4"/>
+      <rect x="218" y="350" width="144" height="34" rx="4"/>
+      <rect x="218" y="392" width="144" height="74" rx="4"/>
+    </g>
+    <g stroke="#0b1220" stroke-width="3" stroke-linecap="round" opacity=".7">
+      <path d="M262 73h70M262 115h70M262 157h70M262 199h70M262 241h70M262 283h70M262 325h70M262 367h70"/>
+    </g>
+    <g>
+      <circle class="led-g" cx="234" cy="73" r="3.5"/><circle class="led-b d2" cx="246" cy="73" r="3.5"/>
+      <circle class="led-b d3" cx="234" cy="115" r="3.5"/><circle class="led-g" cx="246" cy="115" r="3.5"/>
+      <circle class="led-g d2" cx="234" cy="157" r="3.5"/><circle class="led-g d4" cx="246" cy="157" r="3.5"/>
+      <circle class="led-o" cx="234" cy="199" r="3.5"/><circle class="led-g d3" cx="246" cy="199" r="3.5"/>
+      <circle class="led-b" cx="234" cy="241" r="3.5"/><circle class="led-b d2" cx="246" cy="241" r="3.5"/>
+      <circle class="led-g d4" cx="234" cy="283" r="3.5"/><circle class="led-g" cx="246" cy="283" r="3.5"/>
+      <circle class="led-g d2" cx="234" cy="325" r="3.5"/><circle class="led-o d3" cx="246" cy="325" r="3.5"/>
+      <circle class="led-b d3" cx="234" cy="367" r="3.5"/><circle class="led-g" cx="246" cy="367" r="3.5"/>
+    </g>
+    <!-- UPS -->
+    <text x="232" y="420" fill="#9fb0cf" font-family="monospace" font-size="11">UPS · 98%</text>
+    <rect x="232" y="430" width="100" height="8" rx="4" fill="#0b1220"/>
+    <rect x="232" y="430" width="98" height="8" rx="4" fill="#22d3a6"/>
+    <path d="M345 410l-8 12h6l-2 10 9-13h-6l1-9z" fill="#ffb547"/>
+  </g>
+
+  <!-- Rack derecho -->
+  <g>
+    <rect x="390" y="110" width="130" height="370" rx="10" fill="url(#rk)" stroke="#2c4272" stroke-width="2"/>
+    <g fill="url(#sv)" stroke="#33508a" stroke-width="1">
+      <rect x="401" y="124" width="108" height="30" rx="4"/>
+      <rect x="401" y="162" width="108" height="30" rx="4"/>
+      <rect x="401" y="200" width="108" height="30" rx="4"/>
+      <rect x="401" y="238" width="108" height="30" rx="4"/>
+      <rect x="401" y="276" width="108" height="30" rx="4"/>
+      <rect x="401" y="314" width="108" height="30" rx="4"/>
+      <rect x="401" y="352" width="108" height="30" rx="4"/>
+      <rect x="401" y="390" width="108" height="76" rx="4"/>
+    </g>
+    <g stroke="#0b1220" stroke-width="3" stroke-linecap="round" opacity=".7">
+      <path d="M440 139h50M440 177h50M440 215h50M440 253h50M440 291h50M440 329h50M440 367h50"/>
+    </g>
+    <g>
+      <circle class="led-g d2" cx="415" cy="139" r="3"/><circle class="led-b" cx="425" cy="139" r="3"/>
+      <circle class="led-g" cx="415" cy="177" r="3"/><circle class="led-g d3" cx="425" cy="177" r="3"/>
+      <circle class="led-o d2" cx="415" cy="215" r="3"/><circle class="led-b d4" cx="425" cy="215" r="3"/>
+      <circle class="led-g d4" cx="415" cy="253" r="3"/><circle class="led-g" cx="425" cy="253" r="3"/>
+      <circle class="led-b" cx="415" cy="291" r="3"/><circle class="led-g d2" cx="425" cy="291" r="3"/>
+      <circle class="led-g d3" cx="415" cy="329" r="3"/><circle class="led-b" cx="425" cy="329" r="3"/>
+      <circle class="led-g" cx="415" cy="367" r="3"/><circle class="led-o d3" cx="425" cy="367" r="3"/>
+    </g>
+    <!-- ventilador / refrigeración -->
+    <g transform="translate(455 428)" stroke="#1fb6ff" stroke-width="3" stroke-linecap="round" fill="none">
+      <circle r="24" stroke-width="2" opacity=".6"/>
+      <path d="M0 0L0 -18M0 0L15.6 9M0 0L-15.6 9">
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="3s" repeatCount="indefinite"/>
+      </path>
+    </g>
+  </g>
+
+  <!-- Cables de red -->
+  <g fill="none" stroke="url(#cable)" stroke-width="3" stroke-linecap="round" opacity=".9">
+    <path d="M190 160C198 160 198 130 205 130"/>
+    <path d="M190 240C200 240 196 200 205 200"/>
+    <path d="M375 150C383 150 383 170 390 170"/>
+    <path d="M375 270C383 270 383 250 390 250"/>
+  </g>
+</svg>
