@@ -1,14 +1,135 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>https://enven.org/</loc><lastmod>2026-11-09</lastmod><priority>1.0</priority></url>
-<url><loc>https://enven.org/grupo/</loc><lastmod>2026-11-09</lastmod><priority>0.7</priority></url>
-<url><loc>https://enven.org/divisiones/</loc><lastmod>2026-11-09</lastmod><priority>0.7</priority></url>
-<url><loc>https://enven.org/soluciones-corporativas/</loc><lastmod>2026-11-09</lastmod><priority>0.7</priority></url>
-<url><loc>https://enven.org/como-trabajamos/</loc><lastmod>2026-11-09</lastmod><priority>0.7</priority></url>
-<url><loc>https://enven.org/proveedores/</loc><lastmod>2026-11-09</lastmod><priority>0.7</priority></url>
-<url><loc>https://enven.org/contacto/</loc><lastmod>2026-11-09</lastmod><priority>0.7</priority></url>
-<url><loc>https://enven.org/soluciones-corporativas/banca-y-seguros/</loc><lastmod>2026-11-09</lastmod><priority>0.7</priority></url>
-<url><loc>https://enven.org/soluciones-corporativas/energia-y-petroleo/</loc><lastmod>2026-11-09</lastmod><priority>0.7</priority></url>
-<url><loc>https://enven.org/soluciones-corporativas/industria-y-manufactura/</loc><lastmod>2026-11-09</lastmod><priority>0.7</priority></url>
-<url><loc>https://enven.org/soluciones-corporativas/telecomunicaciones/</loc><lastmod>2026-11-09</lastmod><priority>0.7</priority></url>
+  <url>
+    <loc>https://electricista.enven.org/</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://electricista.enven.org/servicios/</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://electricista.enven.org/zonas/</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://electricista.enven.org/guias/</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://electricista.enven.org/contacto/</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://electricista.enven.org/servicios/tableros-electricos/</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://electricista.enven.org/servicios/instalaciones-residenciales/</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://electricista.enven.org/servicios/instalaciones-industriales/</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://electricista.enven.org/servicios/puesta-a-tierra/</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://electricista.enven.org/servicios/plantas-electricas-ups/</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://electricista.enven.org/servicios/iluminacion-led/</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://electricista.enven.org/servicios/mantenimiento-electrico/</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://electricista.enven.org/servicios/emergencias-electricas/</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://electricista.enven.org/zonas/libertador/</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://electricista.enven.org/zonas/chacao/</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://electricista.enven.org/zonas/baruta/</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://electricista.enven.org/zonas/el-hatillo/</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://electricista.enven.org/zonas/sucre/</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://electricista.enven.org/guias/senales-instalacion-electrica-necesita-revision/</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://electricista.enven.org/guias/cuando-cambiar-el-tablero-electrico/</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://electricista.enven.org/guias/que-incluye-una-visita-tecnica-electrica/</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://electricista.enven.org/guias/seguridad-electrica-en-casa/</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
 </urlset>
