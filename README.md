@@ -1,4 +1,4 @@
-# Electricista residencial e industrial en Caracas
+# Servicios Eléctricos Industriales Caracas
 
 Sitio estático multipágina (HTML + CSS + JS) para **GitHub Pages**, con dominio **electricista.enven.org**.
 
@@ -40,4 +40,4 @@ Las páginas se generaron con un script; si quiere editar texto, modifique el HT
 
 ## Formulario
 
-`FORM_ENDPOINT` en `js/main.js` usa Formspree; envía el asunto «Solicitud de cotización - Electricista Caracas». Sin endpoint, abre el correo del usuario (mailto).
+`FORM_ENDPOINT` en `js/main.js` usa Formspree; envía el asunto «Solicitud de cotización - Servicios Eléctricos Industriales Caracas». Sin endpoint, abre el correo del usuario (mailto).

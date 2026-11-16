@@ -291,3 +291,24 @@ p { margin: 0 0 1em; }
   .svc { grid-template-columns: 44px 1fr 20px; }
   .duo-card { padding: 24px; }
 }
+
+@media(max-width:640px){.site-header .brand,.header-inner .brand{font-size:.9rem;gap:8px;letter-spacing:0}.header-inner .brand img{width:28px;height:28px}.header-inner{gap:10px}}
+
+@media(max-width:640px){.topbar .container{flex-wrap:wrap;gap:2px 12px;justify-content:center;text-align:center}.topbar span{white-space:normal}}
+
+@media(max-width:640px){.brand{font-size:.9rem;letter-spacing:0;flex-wrap:nowrap}.site-footer .brand span{white-space:normal}}
+
+/* v4: grupos de servicios y datos UPS */
+.hub-grid .hub-group{grid-column:1/-1;margin:22px 0 0;font-size:1.15rem;color:var(--ink,#0f1b2d);border-bottom:2px solid var(--accent,#f5a300);padding-bottom:6px}
+.hub-grid .hub-group:first-child{margin-top:0}
+dl.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin:0 0 24px;padding:0}
+dl.facts>div{background:rgba(127,127,127,.08);border-left:3px solid var(--accent,#f5a300);padding:10px 14px;border-radius:6px}
+dl.facts dt{font-size:.75rem;text-transform:uppercase;letter-spacing:.05em;opacity:.7}
+dl.facts dd{margin:2px 0 0;font-weight:600}
+@media (max-width:1400px){.header-cta .btn-wa{display:none}}
+h1,h2,h3{overflow-wrap:break-word}.page-head h1{font-size:clamp(1.6rem,6.2vw,2.6rem)}
+.hub-grid .hub-group{color:#fff!important}
+.main-nav a{white-space:nowrap}
+@media (min-width:1001px) and (max-width:1500px){.site-header .brand{font-size:1.05rem;letter-spacing:.03em}}
+@media (max-width:640px){.site-header .brand,.header-inner .brand{white-space:normal;font-size:.78rem;line-height:1.1;max-width:calc(100vw - 110px)}.header-inner .brand span{display:block}}
+@media (min-width:1001px){.site-header .brand{margin-right:24px}.main-nav{gap:18px}}
